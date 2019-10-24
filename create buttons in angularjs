@@ -1,0 +1,29 @@
+html ng-app="Bluebox">
+
+ <head>
+   <title>BlueBox</title>
+   <script src="angular.js"></script>
+ </head>
+ <body>
+    <div ng-controller="BoxController">
+      <button ng-repeat="..." type="button" value="bluebox"></button>
+        <li ng-repeat="x in boxlength">
+            {{index+1}}
+        </li>
+    </button>
+
+    </div>
+
+    <script>
+        angular.module("Bluebox",[])
+            .controller("BoxController",["$scope",function($scope){
+
+              $scope.boxlength=50;
+              $scope.index=0;
+
+
+           }])
+    </script>
+ </body>
+
+ </html>
